@@ -1,0 +1,7 @@
+name 'tt-configs'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures tt-configs'
+long_description 'Installs/Configures tt-configs'
+version '0.1.0'
