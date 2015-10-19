@@ -10,9 +10,9 @@ cookbook_file "/etc/redis/redis.conf" do
 	group "root"
 	mode "0644"
 	action [ :delete, :create ]
-	notifies :reload, "service[redis-server]", :delayed
 end
 
 service "redis-server" do
 	supports :status => true, :restart => true, :reload => true, :start => true, :stop => true
+	action [ :enable, :restart ]
 end
